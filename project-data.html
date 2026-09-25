@@ -211,9 +211,123 @@
     </div>
   </div>
 </section>
+ 
+<!-- Spaced Divider above Project 3 -->
+<hr class="project-divider">
+
+<!-- Project 3 Detailed Section -->
+<section id="project-3" >
+  
+  <!-- Header -->
+  <header class="project-header project-text-left">
+    <h1 class="lang-en project-header-title">
+      Project 3: AI Data Labeling & Quality Assurance (Forage Academy Job Simulation)
+    </h1>
+    <h1 class="lang-fr project-header-title">
+      Projet 3 : Annotation de Données IA & Assurance Qualité (Simulation Virtuelle Forage)
+    </h1>
+  </header>
+
+  <!-- Overview & Core Framework -->
+  <div class="project-block project-text-left project-block-spacing">
+    <p class="lang-en">
+      I labeled batches of support messages using <strong>Intent</strong>, <strong>Sentiment</strong>, and <strong>PII (Personally Identifiable Information)</strong> definitions, wrote brief rationales for tricky edge cases to explain my reasoning, and reviewed existing labels for accuracy. These 3 label types serve as the core building blocks for how AI systems make sense of written customer messages.
+    </p>
+    <p class="lang-fr">
+      J'ai annoté des lots de messages de support client selon l'<strong>Intention</strong>, le <strong>Sentiment</strong> et les <strong>PII (Informations Personnelles Identifiables)</strong>, tout en rédigeant des justifications pour les cas difficiles et en révisant des étiquettes existantes. Ces 3 catégories constituent les piliers permettant aux systèmes d'IA de comprendre les communications écrites.
+    </p>
+
+    <!-- Taxonomy Breakdowns -->
+    <ul class="taxonomy-list">
+      <li>
+        <strong class="lang-en">Intent Label:</strong>
+        <strong class="lang-fr">Étiquette d'Intention :</strong>
+        <span class="lang-en">Tells the AI what the customer is asking for by selecting the best fit among <strong>Billing</strong> (refunds, charges, subscriptions), <strong>Technical</strong> (errors, bugs, login issues), <strong>Account</strong> (profile changes, access updates), or <strong>Other</strong>.</span>
+        <span class="lang-fr">Indique à l'IA la demande du client : <strong>Facturation</strong> (remboursements, frais), <strong>Technique</strong> (erreurs, bugs), <strong>Compte</strong> (mises à jour de profil) ou <strong>Autre</strong>.</span>
+      </li>
+      <li>
+        <strong class="lang-en">Sentiment Label:</strong>
+        <strong class="lang-fr">Étiquette de Sentiment :</strong>
+        <span class="lang-en">Helps the AI respond with the right tone by classifying customer emotion into <strong>Positive</strong> (gratitude, satisfaction), <strong>Neutral</strong> (informational or emotionless), or <strong>Negative</strong> (frustration, complaints, urgency).</span>
+        <span class="lang-fr">Permet à l'IA d'adopter le bon ton en classant l'émotion en <strong>Positif</strong> (gratitude), <strong>Neutre</strong> (informatif) ou <strong>Négatif</strong> (frustration, urgence).</span>
+      </li>
+      <li>
+        <strong class="lang-en">PII Label:</strong>
+        <strong class="lang-fr">Étiquette PII :</strong>
+        <span class="lang-en">Detects personal details like names, emails, phone numbers, or account details, setting the flag to <strong>"Yes"</strong> so the system handles sensitive data with proper privacy safeguards.</span>
+        <span class="lang-fr">Détexte les données personnelles (noms, e-mails, téléphones) et active le drapeau <strong>« Oui »</strong> pour garantir leur traitement sécurisé.</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Side-by-Side Images Container for Batch Labeling & Edge Cases -->
+  <div class="project-images-row">
+    <div class="project-image-col">
+      <img src="images/labeling-batch-1.jpg" alt="Batch Labeling Sample" class="project-img">
+      <p class="image-caption">
+        <span class="lang-en">Figure 1: Batch Labeling — Intent categorized as <strong>Billing</strong> per team guidelines.</span>
+        <span class="lang-fr">Figure 1 : Annotation par lot — Intention classée en <strong>Facturation</strong> selon les consignes.</span>
+      </p>
+    </div>
+    <div class="project-image-col">
+      <img src="images/labeling-edge-case-1.jpg" alt="Edge Case Reasoning Sample" class="project-img">
+      <p class="image-caption">
+        <span class="lang-en">Figure 2: Edge Case 1 — Intent labeled as <strong>Account</strong> and Sentiment as <strong>Neutral</strong>.</span>
+        <span class="lang-fr">Figure 2 : Cas limite 1 — Intention classée en <strong>Compte</strong> et Sentiment en <strong>Neutre</strong>.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Edge Case Explanation -->
+  <div class="project-block project-text-left">
+    <h3 class="lang-en">Edge Case Analysis & Decision Logic</h3>
+    <h3 class="lang-fr">Analyse des Cas Limites & Logique de Décision</h3>
+    <p class="lang-en">
+      For <strong>Edge Case 1</strong>, I labeled the intent as <strong>Account</strong> because the user explicitly requested an update to their email information. I assigned a <strong>Neutral</strong> sentiment since the message tone was straightforward with no signs of frustration or positivity.
+    </p>
+    <p class="lang-fr">
+      Pour le <strong>Cas limite 1</strong>, j'ai identifié l'intention comme <strong>Compte</strong> car l'utilisateur demandait une mise à jour de son e-mail. J'ai attribué un sentiment <strong>Neutre</strong> en raison du ton direct, sans frustration ni satisfaction explicite.
+    </p>
+  </div>
+
+  <!-- Single Image Container for Review / QA -->
+  <div class="project-image-single">
+    <img src="images/labeling-review-qa.jpg" alt="Quality Control Review Framework" class="project-img project-img-single">
+    <p class="image-caption">
+      <span class="lang-en">Figure 3: Quality Control Review — Applying the Keep/Fix/Flag framework to audit peer labels.</span>
+      <span class="lang-fr">Figure 3 : Contrôle Qualité — Application du cadre Keep/Fix/Flag pour auditer les annotations.</span>
+    </p>
+  </div>
+
+  <!-- Quality Assurance Audit & Conclusion -->
+  <div class="project-block project-text-left">
+    <h3 class="lang-en">Quality Control & Guideline Iteration</h3>
+    <h3 class="lang-fr">Contrôle Qualité & Évolution des Directives</h3>
+    <p class="lang-en">
+      During label reviews, I assigned a <strong>Fix</strong> decision on audited samples where labels were mostly accurate but missed the <strong>PII flag</strong>. Even though the phone number itself wasn't directly printed in the text body, the user explicitly asked to update it, which counts as handling personal data.
+    </p>
+    <p class="lang-fr">
+      Lors des révisions, j'ai appliqué la décision <strong>Fix (Correction)</strong> sur des échantillons où la balise <strong>PII</strong> avait été oubliée. Bien que le numéro de téléphone ne figure pas en clair, l'utilisateur demandait explicitement sa mise à jour, ce qui relève de la gestion des données personnelles.
+    </p>
+
+    <div class="takeaway-box">
+      <p class="lang-en takeaway-text">
+        <strong>Key takeaway:</strong> Inconsistent labels confuse machine learning models. When one labeler says the tone is neutral and another says it's negative without explanation, the model doesn't know which example to trust. Writing short rationale notes improves consistency across teams and refines labeling guidelines for everyone.
+      </p>
+      <p class="lang-fr takeaway-text">
+        <strong>Leçon clé :</strong> Des étiquettes incohérentes désorientent les modèles de machine learning. Lorsqu'un annotateur indique un ton neutre et un autre un ton négatif sans explication, le modèle ne sait pas quel exemple suivre. Rédiger de brèves justifications garantit la cohérence d'équipe et améliore les directives globales.
+      </p>
+    </div>
+  </div>
+
+</section>
+
 </article>
 
   <script src="script.js"></script>
+
+  </body>
+</html>
 
   </body>
 </html>
