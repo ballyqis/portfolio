@@ -1,0 +1,219 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+            <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQ8445RPTF"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-NQ8445RPTF');
+        </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Gallery | Balikis Abdulkadri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <nav class="lang-nav">
+        <button onclick="setLanguage('en')">EN</button>
+        <button onclick="setLanguage('fr')">FR</button>
+        <a href="projects.html" class="home-link">← Back to Projects</a>
+    </nav>
+
+<article class="case-study container">
+  <div class="card-content">
+    
+    <!-- Badges -->
+    <span class="project-badge lang-en">Project 1</span>
+    <span class="project-badge lang-fr">  Projet 1</span>
+
+    <!-- Titles -->
+    <h3 class="project-title lang-en">Airport Lounge Demand & Eligibility Model</h3>
+    <h3 class="project-title lang-fr">Un Modèle d'Éligibilité aux Salons d'Aéroport</h3>
+
+    <!-- Business Challenge Section -->
+    <h4 class="section-heading lang-en">The Business Challenge</h4>
+    <h4 class="section-heading lang-fr">Le Défi Commercial</h4>
+    
+    <p class="lang-en">British Airways required a flexible, scalable methodology to forecast VIP lounge demand at Terminal 3. With fluctuating flight schedules and changing passenger volumes, airport operations needed data-driven estimates of lounge eligibility across three premium customer tiers (Tier 1, Tier 2, and Tier 3) to optimize space and resource allocation.</p>
+    <p class="lang-fr">British Airways nécessitait une méthodologie flexible et évolutive pour prévoir la demande des salons VIP au Terminal 3. Face aux variations d'horaires et de flux de passagers, l'équipe opérationnelle avait besoin d'estimations basées sur les données pour trois catégories de clients premium (Niveau 1, Niveau 2 et Niveau 3) afin d'optimiser l'espace et les ressources.</p>
+
+    <!-- Analytical Approach Section -->
+    <h4 class="section-heading lang-en">Analytical Approach</h4>
+    <h4 class="section-heading lang-fr">Approche Analytique</h4>
+
+    <ul>
+      <li>
+        <span class="lang-en"><strong>Data Processing:</strong> Cleaned and engineered schedule data across 10,000+ flights avec Excel, calculating custom seat capacity metrics and tier-eligibility distribution rates.</span>
+        <span class="lang-fr"><strong>Traitement des Données :</strong> Nettoyage et structuration des données sur plus de 10 000 vols avec Excel, calcul des capacités de sièges et des taux de répartition par niveau d'éligibilité.</span>
+      </li>
+      <li>
+        <span class="lang-en"><strong>Grouping:</strong> Flights are categorized across two operational dimensions: Haul Distance (Short-Haul vs. Long-Haul) and Departure Window (Morning, Lunchtime, Afternoon, Evening) </span>
+        <span class="lang-fr"><strong>Groupement:</strong> Les vols sont catégorisés selon deux dimensions opérationnelles : la distance de vol (Court-courrier vs Long-courrier) et la tranche horaire de départ (Matin, Midi, Après-midi, Soir).</span>
+      </li>
+
+      
+
+
+
+    </ul>
+
+    <!-- Pivot Table Placeholder -->
+    <div class="media-placeholder">
+      <img src="images/loungeeligibility.png" >
+    </div>
+
+    <!-- Insights Section -->
+    <h4 class="section-heading lang-en">Key Insights & Strategic Impact</h4>
+    <h4 class="section-heading lang-fr">Résultats Clés et Impact Stratégique</h4>
+
+    <ul>
+      <li>
+  <!-- ENGLISH VERSION -->
+  <span class="lang-en">
+    <strong>Findings:</strong>
+    <ul>
+      <li>Across every flight category—regardless of haul length or time of day—Tier 1 (First Class / VIP) eligibility stays consistently below 0.4%, less than 1 passenger per departure.</li>
+      <li>Tier 3 (Premium Economy/Silver cardholders) accounts for the vast majority of lounge traffic, peaking during Short-Haul Morning and Afternoon departures at 16.7% to 17.3%.</li>
+    </ul>
+  </span>
+
+  <!-- FRENCH VERSION -->
+  <span class="lang-fr">
+    <strong>Résultats :</strong>
+    <ul>
+      <li>Qu'importe la catégorie de vol — quelle que soit la distance de vol ou la tranche horaire — l'éligibilité au Niveau 1 (Première Classe / VIP) reste systématiquement sous la barre des 0,4 %, soit moins d'un passager par départ.</li>
+      <li>Le Niveau 3 (Économie Privilège / membres Silver) représente la vaste majorité du trafic dans les salons, enregistrant des pics lors des départs court-courriers du matin et de l'après-midi (entre 16,7 % et 17,3 %).</li>
+    </ul>
+  </span>
+</li>
+
+
+      <li>
+        <span class="lang-en"><strong>How the model will apply to future or changing flight schedules:</strong> Instead of re-doing the math for every
+           new flight, BA can just look at any new flight (e.g, a Short-Haul Morning flight with 180 seats), check my table percentage (⁠16.7%⁠), and instantly multiply 180 by 16.7% to estimate how many lounge seats they need. That will be 30.06% </span>
+        <span class="lang-fr"><strong>Application du modèle aux programmes de vols futurs ou changeants:</strong> Plutôt que de refaire les calculs pour chaque nouveau vol, British Airways peut simplement se référer à ce modèle de consultation. Par exemple, pour un vol court-courrier du matin équipé de 180 sièges, il suffit de consulter le taux correspondant dans le tableau, (16,7 %) et de le multiplier directement 180 par 16,7 pour obtenir une estimation instantanée de la demande : environ 30 passagers admissibles au salon.</span>
+      </li>
+      <li>
+        <span class="lang-en"><strong>Business Recommendation:</strong>
+          <li> Building a dedicated, high-overhead Tier 1 space in Terminal 3 is commercially unviable. BA should instead implement a shared VIP suite model, significantly lowering capital expenditures while maintaining a premium customer experience.</li></span>
+        <span class="lang-fr"><strong>Recommandation Stratégique :</strong> 
+          <li>La construction d'un espace dédié de Niveau 1 à coûts fixes élevés au Terminal 3 n'est pas rentable. BA devrait privilégier un modèle de suite VIP partagée, réduisant considérablement les coûts d'investissement tout en maintenant une expérience haut de gamme.</li></span>
+      </li>
+      <li>
+  <!-- ENGLISH VERSION -->
+  <span class="lang-en">
+     Lounge capacity, seating layout, and catering resources in Terminal 3 should be scaled primarily around Short-Haul departure spikes rather than Long-Haul flights.
+  </span>
+
+  <!-- FRENCH VERSION -->
+  <span class="lang-fr">
+     La capacité des salons, la disposition des assises et la gestion de la restauration au Terminal 3 doivent être dimensionnées principalement en fonction des pics de départs court-courriers, plutôt que sur les vols long-courriers.
+  </span>
+</li>
+    </ul>
+
+  </div>
+</div>
+
+
+<!-- Divider with spacing above and below -->
+<hr style="border: none; height: 2px; background-color: #d1d5db; margin-top: 60px; margin-bottom: 40px; width: 100%;">
+
+<!-- Project 2 Section Header -->
+<div style="width: 100%; margin-left: 0; padding-left: 0; text-align: left;">
+  <h1 class="lang-en" style="margin-left: 0; padding-left: 0; color: #0a2540; font-size: 1.8rem; font-weight: 1000; ">
+    Project 2: Customer Booking Prediction Model
+  </h1>
+  <h1 class="lang-fr" style="display: none; margin-left: 0; padding-left: 0; color: #0a2540; font-size: 1.8rem; font-weight: 1000;">
+    Projet 2 : Modèle Prédictif des Réservations Client
+  </h1>
+</div>
+
+  <!-- The Business Challenge -->
+  <div class="project-block">
+    <h3 class="lang-en">The Business Challenge</h3>
+    <h3 class="lang-fr" style="display: none;">Le Défi Commercial</h3>
+    <p class="lang-en">
+      British Airways needed to identify which online search behaviors predict whether a customer will complete a flight booking or drop off. The objective was to build a predictive machine learning model and deliver actionable insights to improve conversion rates.
+    </p>
+    <p class="lang-fr" style="display: none;">
+      British Airways souhaitait identifier les comportements de recherche en ligne qui prédisent si un client va finaliser sa réservation ou abandonner. L'objectif était de concevoir un modèle d'apprentissage automatique prédictif et de fournir des recommandations concrètes pour optimiser le taux de conversion.
+    </p>
+  </div>
+
+  <!-- Analytical Approach with Tools Highlighted -->
+<div class="project-block">
+  <h3 class="lang-en">Analytical Approach & Toolkit</h3>
+  <h3 class="lang-fr" style="display: none;">Approche Analytique & Outils</h3>
+  <ul>
+    <li>
+      <strong class="lang-en">Data Processing & Feature Engineering (Python & Pandas):</strong>
+      <strong class="lang-fr" style="display: none;">Traitement des Données & Ingénierie des Variables (Python & Pandas) :</strong>
+      <span class="lang-en">Cleaned and preprocessed 50,000 search records using <strong>Pandas</strong>, applying categorical encoding for routes and customer origins.</span>
+      <span class="lang-fr" style="display: none;">Nettoyage et préparation de 50 000 données de recherche avec <strong>Pandas</strong>, incluant l'encodage des itinéraires et origines clients.</span>
+    </li>
+    <li>
+      <strong class="lang-en">Machine Learning Predictive Modeling (Scikit-Learn):</strong>
+      <strong class="lang-fr" style="display: none;">Modélisation Prédictive Machine Learning (Scikit-Learn) :</strong>
+      <span class="lang-en">Built a <strong>Random Forest Classifier</strong> in <strong>Scikit-Learn</strong> to predict booking conversions (<code>booking_complete</code>) and calculated feature importances.</span>
+      <span class="lang-fr" style="display: none;">Conception d'un classifieur <strong>Random Forest</strong> avec <strong>Scikit-Learn</strong> pour prédire les conversions d'achat (<code>booking_complete</code>) et extraire l'importance des variables.</span>
+    </li>
+    <li>
+      <strong class="lang-en">Model Evaluation & Visualization (Matplotlib / Seaborn):</strong>
+      <strong class="lang-fr" style="display: none;">Évaluation & Visualisation (Matplotlib / Seaborn) :</strong>
+      <span class="lang-en">Evaluated model performance using ROC-AUC (0.7827) and generated horizontal feature importance visualizations using <strong>Matplotlib</strong>.</span>
+      <span class="lang-fr" style="display: none;">Évaluation des performances via le score ROC-AUC (0,7827) et création de graphiques d'importance des variables avec <strong>Matplotlib</strong>.</span>
+    </li>
+  </ul>
+</div>
+
+  <!-- Visual Display -->
+  <div class="project-visual">
+    <div class="chart-container">
+      <img src="images/feature_importance.png" alt="Feature Importance Chart" class="chart-img">
+      <p class="chart-caption lang-en">Figure 1: Feature Importance Ranking generated via Random Forest model (ROC-AUC: 0.7827)</p>
+      <p class="chart-caption lang-fr" style="display: none;">Figure 1 : Classement de l'importance des variables via le modèle Random Forest (ROC-AUC : 0,7827)</p>
+    </div>
+  </div>
+
+  <!-- Key Insights & Strategic Impact -->
+  <div class="project-block">
+    <h3 class="lang-en">Key Insights & Strategic Impact</h3>
+    <h3 class="lang-fr" style="display: none;">Insights Clés et Impact Stratégique</h3>
+    
+    <div class="impact-section">
+      <h4 class="lang-en">Findings:</h4>
+      <h4 class="lang-fr" style="display: none;">Résultats :</h4>
+      <ul>
+        <li class="lang-en"><strong>Primary Drivers:</strong> Purchase lead time (<code>purchase_lead</code>), flight route, and booking origin are the strongest predictors of purchase intent.</li>
+        <li class="lang-fr" style="display: none;"><strong>Facteurs Principaux :</strong> Le délai de réservation (<code>purchase_lead</code>), l'itinéraire et l'origine géographique sont les indicateurs clés de l'intention d'achat.</li>
+        
+        <li class="lang-en"><strong>Low Ancillary Impact:</strong> Extra baggage and meal selections show minimal influence on predicting ticket purchase completion.</li>
+        <li class="lang-fr" style="display: none;"><strong>Faible Impact des Options :</strong> Le choix de bagages supplémentaires ou de repas a un impact négligeable sur la finalisation de la réservation.</li>
+      </ul>
+    </div>
+
+    <div class="impact-section">
+      <h4 class="lang-en">Business Recommendations:</h4>
+      <h4 class="lang-fr" style="display: none;">Recommandations Commerciales :</h4>
+      <ul>
+        <li class="lang-en">Focus marketing and dynamic retargeting on customers searching well in advance of flight departure dates.</li>
+        <li class="lang-fr" style="display: none;">Cibler en priorité les campagnes marketing et le retargeting dynamique sur les clients qui anticipent leurs recherches.</li>
+        
+        <li class="lang-en">Tailor route-specific promotion bundles based on top-performing booking origin countries.</li>
+        <li class="lang-fr" style="display: none;">Personnaliser les offres promotionnelles par itinéraire en fonction des pays d'origine les plus porteurs.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</article>
+
+  <script src="script.js"></script>
+
+  </body>
+</html>
