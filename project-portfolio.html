@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQ8445RPTF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NQ8445RPTF');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development & Portfolio Architecture | Balikis Abdulkadri</title>
+    
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="case-study-page">
+
+    <!-- Sticky Glass Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="navv-brand" id="navBrand">Balikis Abdulkadri</div>
+        <ul class="nav-links">
+            <li><a href="index.html#home" class="lang-en">Home</a><a href="index.html#home" class="lang-fr">Accueil</a></li>
+            <li><a href="index.html#projects" class="lang-en">Projects</a><a href="index.html#projects" class="lang-fr">Projets</a></li>
+            <li><a href="index.html#about" class="lang-en">About</a><a href="index.html#about" class="lang-fr">À propos</a></li>
+            <li><a href="index.html#services" class="lang-en">Services</a><a href="index.html#services" class="lang-fr">Services</a></li>
+        </ul>
+        <div class="lang-switch">
+            <button id="btn-en" class="active" onclick="setLanguage('en')">EN</button>
+            <span class="lang-divider">|</span>
+            <button id="btn-fr" onclick="setLanguage('fr')">FR</button>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header class="page-header">
+        <div class="glass-card page-header-glass">
+            <span class="badge-accent lang-en">Full-Stack Web Development & AI Acceleration</span>
+            <span class="badge-accent lang-fr">Développement web et accélération grâce à l’IA</span>
+            
+            <h1 class="page-title lang-en">Personal Portfolio Architecture & Engineering</h1>
+            <h1 class="page-title lang-fr">Conception et développement de mon portfolio</h1>
+            
+            <p class="page-subtitle lang-en">A complete look at how I engineered this multi-page portfolio site using HTML5, CSS3, and modern JavaScript—accelerating UI prototyping and development with AI tools.</p>
+            <p class="page-subtitle lang-fr">Découvrez comment j’ai conçu et développé ce portfolio en HTML5, CSS3 et JavaScript, en m’appuyant sur l’IA pour accélérer la création et le prototypage des interfaces.</p>
+        </div>
+    </header>
+
+    <main class="case-study-container">
+
+        <!-- Phase 1: User Interface & AI Concepts -->
+        <article class="case-study-card">
+            <div class="card-tag"><span class="lang-en">Phase 01</span><span class="lang-fr">Étape 01</span></div>
+
+            <h2 class="study-title lang-en">UI Concept </h2>
+            <h2 class="study-title lang-fr">Conception de l’interface</h2>
+
+            <p class="study-summary lang-en">Before writing production code, I conceptualized and iterated the ideal portfolio layout and aesthetic using visual AI tools (Grok) to establish color palettes, glassmorphism framing, and typography hierarchy.</p>
+            <p class="study-summary lang-fr">Avant de commencer le développement, j’ai exploré plusieurs pistes avec l’outil d’IA générative Grok pour définir la palette de couleurs, l’effet de verre dépoli et les choix typographiques du site.</p>
+
+            <div class="grid-two-col">
+                <div class="media-frame" onclick="openLightbox('images/graphic-design-1.jfif', 'Grok UI Design Concept 1 - Dark Theme Layout')">
+                    <img src="images/graphic-design-1.jfif" alt="Grok Design Concept 1" class="zoomable-img">
+                    <p class="media-caption lang-en">Figure 1.1: Early Grok-generated visual concept for hero styling (graphic-design-1).</p>
+                    <p class="media-caption lang-fr">Figure 1.1 : Première proposition de Grok pour la section d’accueil (graphic-design-1).</p>
+                </div>
+
+                <div class="media-frame" onclick="openLightbox('images/graphic-design-2.jfif', 'Grok UI Design Concept 2 - Card Grid Layout')">
+                    <img src="images/graphic-design-2.jfif" alt="Grok Design Concept 2" class="zoomable-img">
+                    <p class="media-caption lang-en">Figure 1.2: Grok visual direction for interactive project cards (graphic-design-2).</p>
+                    <p class="media-caption lang-fr">Figure 1.2 : Piste graphique proposée par Grok pour les cartes de projets interactives (graphic-design-2).</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Phase 2: Production Development -->
+        <article class="case-study-card">
+            <div class="card-tag"><span class="lang-en">Phase 02</span><span class="lang-fr">Étape 02</span></div>
+
+            <h2 class="study-title lang-en">The Development Phase</h2>
+            <h2 class="study-title lang-fr">Développement du site</h2>
+
+            <p class="study-summary lang-en">I translated the generative visual concepts into clean, maintainable, production-ready HTML, CSS, and JavaScript—building responsive CSS Grid layouts and custom glassmorphism containers.</p>
+            <p class="study-summary lang-fr">J’ai transformé ces concepts en code HTML, CSS et JavaScript clair et facile à maintenir. J’ai également créé une mise en page adaptative et des cartes à effet de verre dépoli.</p>
+
+            <div class="grid-two-col">
+                <div class="media-frame" onclick="openLightbox('images/host-page.png', 'Production Code Architecture - Hero Section Implementation')">
+                    <img src="images/host-page.png" alt="Host Page Architecture" class="zoomable-img">
+                    
+                </div>
+
+                <div class="media-frame" onclick="openLightbox('images/cards-page.png', 'Production Code Architecture - Interactive Card System')">
+                    <img src="images/cards-page.png" alt="Cards Page Architecture" class="zoomable-img">
+                    
+                </div>
+            </div>
+        </article>
+
+        <!-- Phase 3: Content Expansion -->
+        <article class="case-study-card">
+            <div class="card-tag"><span class="lang-en">Phase 03</span><span class="lang-fr">Étape 03</span></div>
+
+            <h2 class="study-title lang-en">Content Expansion & Deep-Dive Sub-Pages</h2>
+            <h2 class="study-title lang-fr">Contenu enrichi et pages de projets détaillées</h2>
+
+            <p class="study-summary lang-en">To maintain a clean user experience on the home page, I created dedicated standalone case study pages to display telemetry data, design assets, and GA4 web analytics in full detail.</p>
+            <p class="study-summary lang-fr">Pour garder une page d’accueil claire, j’ai créé des pages dédiées à chaque projet afin de présenter en détail l’analyse de données, le design et les résultats de Google Analytics 4.</p>
+
+            <div class="grid-three-col">
+                <div class="media-frame" onclick="openLightbox('images/content-1.jfif', 'Detailed Data Analytics Case Study Page')">
+                    <img src="images/content-1.jfif" alt="Content Sub-Page 1" class="zoomable-img">
+                    
+                </div>
+
+                <div class="media-frame" onclick="openLightbox('images/content-2.jfif', 'Design Gallery Case Study Page')">
+                    <img src="images/content-2.jfif" alt="Content Sub-Page 2" class="zoomable-img">
+                    
+                </div>
+
+                <div class="media-frame" onclick="openLightbox('images/content-3.jfif', 'GA4 Web Analytics Case Study Page')">
+                    <img src="images/content-3.jfif" alt="Content Sub-Page 3" class="zoomable-img">
+                    
+                </div>
+            </div>
+        </article>
+
+        <!-- Technical Highlights -->
+        <article class="case-study-card">
+            <div class="card-tag"><span class="lang-en">Core Technical Architecture</span><span class="lang-fr">Architecture technique</span></div>
+
+            <h2 class="study-title lang-en">Project Highlights & Technical Execution</h2>
+            <h2 class="study-title lang-fr">Principales fonctionnalités et réalisation technique</h2>
+
+            <ul class="bullet-list" style="margin-top: 20px;">
+                <li>
+                    <strong class="lang-en">Responsive Glassmorphic UI:</strong>
+                    <strong class="lang-fr">Interface adaptative à effet de verre dépoli :</strong>
+                    <span class="lang-en">Custom CSS architecture built with CSS Variables, Flexbox, CSS Grid, and dynamic glassmorphism aesthetics.</span>
+                    <span class="lang-fr">Une architecture CSS sur mesure qui s’appuie sur les variables CSS, Flexbox et CSS Grid pour créer une interface à effet de verre dépoli.</span>
+                </li>
+
+                <li>
+                    <strong class="lang-en">Bilingual Dual-Language Engine:</strong>
+                    <strong class="lang-fr">Site bilingue :</strong>
+                    <span class="lang-en">Pure JavaScript DOM manipulation handling real-time, stateful English/French toggling without page reloads.</span>
+                    <span class="lang-fr">Le JavaScript permet de passer instantanément du français à l’anglais sans recharger la page.</span>
+                </li>
+
+                <li>
+                    <strong class="lang-en">Interactive Lightbox & Analytics:</strong>
+                    <strong class="lang-fr">Agrandissement des images et suivi des visites :</strong>
+                    <span class="lang-en">Custom JavaScript modal script for image pop-outs, paired with GA4 event tracking integration.</span>
+                    <span class="lang-fr">Une fenêtre JavaScript sur mesure permet d’agrandir les images, tandis que Google Analytics 4 suit les interactions.</span>
+                </li>
+            </ul>
+        </article>
+
+    </main>
+
+    <!-- Lightbox Pop-Up Modal -->
+    <div id="image-modal" class="lightbox-modal" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="modal-img" alt="Expanded view">
+        <div id="modal-caption" class="lightbox-caption"></div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Balikis Abdulkadri. <span class="lang-en">All rights reserved.</span><span class="lang-fr">Tous droits réservés.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>

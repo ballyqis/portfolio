@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQ8445RPTF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NQ8445RPTF');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis & Engineering Case Studies | Balikis Abdulkadri</title>
+    
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="case-study-page">
+
+    <!-- Sticky Glass Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="navv-brand" id="navBrand">Balikis Abdulkadri</div>
+        <ul class="nav-links">
+            <li><a href="index.html#home" class="lang-en">Home</a><a href="index.html#home" class="lang-fr">Accueil</a></li>
+            <li><a href="index.html#projects" class="lang-en">Projects</a><a href="index.html#projects" class="lang-fr">Projets</a></li>
+            <li><a href="index.html#about" class="lang-en">About</a><a href="index.html#about" class="lang-fr">À propos</a></li>
+            <li><a href="index.html#services" class="lang-en">Services</a><a href="index.html#services" class="lang-fr">Services</a></li>
+        </ul>
+        <div class="lang-switch">
+            <button id="btn-en" class="active" onclick="setLanguage('en')">EN</button>
+            <span class="lang-divider">|</span>
+            <button id="btn-fr" onclick="setLanguage('fr')">FR</button>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section for Data Page -->
+    <header class="page-header">
+        <div class="glass-card page-header-glass">
+            <span class="badge-accent lang-en">Data Analytics & AI Quality</span>
+            <span class="badge-accent lang-fr">Analyse de données et qualité des données pour l’IA</span>
+            
+            <h1 class="page-title lang-en">Data Insights, Predictive Modeling & AI Labeling</h1>
+            <h1 class="page-title lang-fr">Analyse de données, prévisions et annotation pour l’IA</h1>
+            
+            <p class="page-subtitle lang-en">In-depth case studies showcasing telemetry diagnostics, predictive customer behavioral analytics, and AI training dataset quality control.</p>
+            <p class="page-subtitle lang-fr">Découvrez des projets d’analyse de données, de prévision du comportement des clients et de contrôle qualité de jeux de données destinés à l’entraînement de modèles d’IA.</p>
+        </div>
+    </header>
+
+    <main class="case-study-container">
+
+        <!-- ==========================================================================
+             CASE STUDY 1: TELEMETRY DASHBOARD
+             ========================================================================== -->
+        <article class="case-study-card">
+            <div class="card-tag"><span class="lang-en">Project 01</span><span class="lang-fr">Projet 01</span></div>
+            
+            <h2 class="study-title lang-en">Daikibo Telemetry Data Analysis Dashboard</h2>
+            <h2 class="study-title lang-fr">Tableau de bord des données de télémétrie de Daikibo</h2>
+
+            <p class="study-summary lang-en">An interactive executive telemetry dashboard built in Tableau to analyze IoT machine performance, calculate operational downtime, and pinpoint facility bottlenecks across Daikibo's global manufacturing plants.</p>
+            <p class="study-summary lang-fr">Un tableau de bord interactif créé avec Tableau pour suivre les performances des équipements connectés, calculer leurs temps d’arrêt et repérer les problèmes dans les usines de Daikibo.</p>
+
+            <div class="grid-two-col">
+                <div class="col-text">
+                    <h3 class="section-subheading lang-en">The Business Challenge</h3>
+                    <h3 class="section-subheading lang-fr">Le problème à résoudre</h3>
+                    <p class="lang-en">Daikibo collected raw JSON telemetry logs containing qualitative status updates (<code>healthy</code> vs. <code>unhealthy</code> pings) across multiple global facilities. However, leadership lacked quantifiable metrics to measure actual downtime in minutes and had no visibility into which specific factories and equipment were driving operational losses.</p>
+                    <p class="lang-fr">Daikibo recueillait dans plusieurs usines des journaux de télémétrie bruts au format JSON, indiquant si les équipements fonctionnaient (<code>healthy</code>) ou étaient en panne (<code>unhealthy</code>). La direction ne pouvait toutefois ni mesurer précisément la durée des arrêts en minutes, ni savoir quelles usines et quelles machines étaient à l’origine des pertes.</p>
+
+                    <h3 class="section-subheading lang-en">Technical Execution</h3>
+                    <h3 class="section-subheading lang-fr">Mise en œuvre technique</h3>
+                    <ul class="bullet-list">
+                        <li>
+                            <span class="lang-en"><strong>IoT Data Ingestion:</strong> Connected Tableau directly to nested <code>daikibo-telemetry-data.json</code> datasets, flattening hierarchy levels to expose hidden parameters (facility sites, device IDs, and ping logs).</span>
+                            <span class="lang-fr"><strong>Import des données IoT :</strong> Connexion de Tableau aux fichiers JSON imbriqués et mise à plat de leur structure pour faire apparaître les sites, les identifiants des appareils et les relevés.</span>
+                        </li>
+                        <li>
+                            <span class="lang-en"><strong>Downtime Calculated Fields:</strong> Authored conditional calculation logic (<code>IF [Status] = "unhealthy" THEN 10 ELSE 0 END</code>) converting 10-minute intervals into quantifiable downtime metrics.</span>
+                            <span class="lang-fr"><strong>Calcul des temps d’arrêt :</strong> Création d’un calcul conditionnel pour convertir les relevés de 10 minutes en durées d’arrêt mesurables.</span>
+                        </li>
+                        <li>
+                            <span class="lang-en"><strong>Interactive Cross-Filtering:</strong> Engineered dynamic dashboard action filters enabling executives to select any plant and instantly isolate failing machine types in real time.</span>
+                            <span class="lang-fr"><strong>Filtres interactifs :</strong> Ajout de filtres au tableau de bord pour sélectionner une usine et repérer immédiatement les types de machines en panne.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-media">
+                    <div class="media-frame">
+                        <img src="images/tableau-dashboard.jpg" 
+                           alt="Daikibo Telemetry Tableau Dashboard" 
+                           class="zoomable-img" 
+                           onclick="openLightbox('images/tableau-dashboard.jpg', 'Daikibo Telemetry Tableau Dashboard')">
+                        <p class="media-caption lang-en">Figure 1.1: Interactive Tableau Telemetry Dashboard analyzing facility downtime.</p>
+                        <p class="media-caption lang-fr">Figure 1.1 : Tableau de bord Tableau qui compare les temps d’arrêt des différentes usines.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="outcome-box">
+                <h3 class="section-subheading lang-en"><i class="fas fa-trophy"></i> Strategic Impact & Key Outcomes</h3>
+                <h3 class="section-subheading lang-fr"><i class="fas fa-trophy"></i> Résultats et bénéfices</h3>
+                <ul class="bullet-list">
+                    <li>
+                        <span class="lang-en"><strong>Pinpointed Facility Bottleneck:</strong> Proved that a single plant—<strong>Factory Seiko</strong>—accounted for over 80% of global downtime, disproving assumptions of widespread operational failure.</span>
+                        <span class="lang-fr"><strong>Repérage de l’usine la plus touchée :</strong> L’analyse montre que l’usine <strong>Seiko</strong> est responsable de plus de 80 % du temps d’arrêt total, contrairement à l’hypothèse d’un problème généralisé.</span>
+                    </li>
+                    <li>
+                        <span class="lang-en"><strong>Isolated Root Cause Hardware:</strong> Identified that failing <strong>Laser Welders</strong> caused nearly all stoppage events at Seiko, protecting other functioning lines from unnecessary maintenance stops.</span>
+                        <span class="lang-fr"><strong>Identification des machines en cause :</strong> Les <strong>machines de soudage laser</strong> sont responsables de presque tous les arrêts à Seiko. Les autres lignes peuvent ainsi continuer à fonctionner sans maintenance inutile.</span>
+                    </li>
+                    <li>
+                        <span class="lang-en"><strong>Targeted Capital Allocation:</strong> Allowed leadership to immediately redirect specialized repair teams and replacement inventory directly to Factory Seiko.</span>
+                        <span class="lang-fr"><strong>Meilleure affectation des ressources :</strong> La direction peut envoyer les équipes de réparation et les pièces de rechange là où elles sont vraiment nécessaires, à l’usine Seiko.</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- ==========================================================================
+             CASE STUDY 2: AIRPORT LOUNGE DEMAND MODEL
+             ========================================================================== -->
+        <article class="case-study-card">
+            <div class="card-tag"><span class="lang-en">Project 02</span><span class="lang-fr">Projet 02</span></div>
+
+            <h2 class="study-title lang-en">Airport Lounge Demand & Eligibility Capacity Model</h2>
+            <h2 class="study-title lang-fr">Prévision de la fréquentation et des accès au salon d’aéroport</h2>
+
+            <p class="study-summary lang-en">A mathematical forecasting model engineered for British Airways to evaluate passenger eligibility distributions across three premium customer tiers and optimize lounge space allocation at London Heathrow Terminal 3.</p>
+            <p class="study-summary lang-fr">Un modèle conçu pour British Airways afin d’estimer le nombre de passagers ayant accès au salon selon trois catégories et de mieux organiser l’espace au terminal 3 de l’aéroport de Londres-Heathrow.</p>
+
+            <h3 class="section-subheading lang-en">The Business Challenge</h3>
+            <h3 class="section-subheading lang-fr">Le problème à résoudre</h3>
+            <p class="lang-en">British Airways required a flexible, scalable methodology to forecast VIP lounge demand at Terminal 3. With fluctuating flight schedules and changing passenger volumes, airport operations needed data-driven estimates of lounge eligibility across three customer tiers (Tier 1 First Class, Tier 2 Business/Gold, Tier 3 Premium Economy/Silver) to optimize floor space and catering budgets.</p>
+            <p class="lang-fr">British Airways avait besoin d’une méthode souple pour prévoir la fréquentation de son salon au terminal 3. Comme les horaires de vol et le nombre de passagers varient, les équipes devaient estimer combien de voyageurs, répartis en trois catégories, pourraient y accéder afin d’adapter l’espace et la restauration.</p>
+
+            <h3 class="section-subheading lang-en">Analytical Approach & Categorization</h3>
+            <h3 class="section-subheading lang-fr">Méthode d’analyse et catégories de passagers</h3>
+            <ul class="bullet-list">
+                <li>
+                    <span class="lang-en"><strong>Data Engineering:</strong> Structured and processed 10,000+ flight records in Excel, deriving custom seat capacity calculations and tier-eligibility distribution ratios.</span>
+                    <span class="lang-fr"><strong>Préparation des données :</strong> Structuration de plus de 10 000 enregistrements de vols dans Excel, puis calcul de la capacité des sièges et de la part de passagers admissibles dans chaque catégorie.</span>
+                </li>
+                <li>
+                    <span class="lang-en"><strong>Operational Dimensionality:</strong> Categorized all flights across Haul Distance (Short-Haul vs. Long-Haul) and Departure Time Windows (Morning, Lunchtime, Afternoon, Evening).</span>
+                    <span class="lang-fr"><strong>Critères opérationnels :</strong> Classement des vols selon leur durée (court ou long-courrier) et leur heure de départ (matin, midi, après-midi ou soir).</span>
+                </li>
+            </ul>
+
+            <div class="media-frame wide-media">
+                <img src="images/loungeeligibility.png" 
+                    alt="Lounge Eligibility Pivot Table Analysis" 
+                    class="zoomable-img" 
+                    onclick="openLightbox('images/loungeeligibility.png', 'Lounge Eligibility Pivot Table Analysis')">
+                <p class="media-caption lang-en">Figure 2.1: Flight tier eligibility matrix cross-tabulated by haul distance and departure windows.</p>
+                <p class="media-caption lang-fr">Figure 2.1 : Admissibilité des passagers selon la durée du vol et l’heure de départ.</p>
+            </div>
+
+            <div class="outcome-box">
+                <h3 class="section-subheading lang-en"><i class="fas fa-lightbulb"></i> Key Insights & Strategic Recommendations</h3>
+                <h3 class="section-subheading lang-fr"><i class="fas fa-lightbulb"></i> Principaux enseignements et recommandations</h3>
+                <ul class="bullet-list">
+                    <li>
+                        <span class="lang-en"><strong>Tier 1 Rarity:</strong> Tier 1 (First Class) eligibility remains consistently under 0.4% across all departure windows—representing less than 1 passenger per flight departure.</span>
+                        <span class="lang-fr"><strong>Un nombre limité de passagers en première classe :</strong> Moins de 0,4 % des passagers sont concernés, quelle que soit l’heure de départ — soit moins d’un passager par vol en moyenne.</span>
+                    </li>
+                    <li>
+                        <span class="lang-en"><strong>Peak Traffic Drivers:</strong> Tier 3 (Silver/Premium Economy) drives over 85% of total lounge volume, peaking during Short-Haul Morning and Afternoon windows at 16.7%–17.3% seat eligibility.</span>
+                        <span class="lang-fr"><strong>La principale source de fréquentation :</strong> La catégorie 3 (Silver et classe économique premium) représente plus de 85 % des visiteurs. Pour les vols court-courriers, la part atteint 16,7 à 17,3 % le matin et l’après-midi.</span>
+                    </li>
+                    <li>
+                        <span class="lang-en"><strong>Scalable Schedule Formula:</strong> Created a reusable multiplier coefficient system. For any future flight (e.g., 180-seat Short-Haul Morning flight), operations simply multiply <code>180 × 16.7% = 30 expected lounge guests</code>.</span>
+                        <span class="lang-fr"><strong>Une formule réutilisable :</strong> Le coefficient permet d’estimer la fréquentation de chaque vol. Par exemple, pour un vol court-courrier du matin de 180 places, le calcul <code>180 × 16,7 % = 30 passagers attendus</code> donne une estimation du nombre de visiteurs.</span>
+                    </li>
+                    <li>
+                        <span class="lang-en"><strong>Capital Allocation Strategy:</strong> Recommended against constructing an expensive dedicated Tier 1 VIP lounge in T3. Advised adopting a flexible shared VIP suite alongside expanded seating for Tier 3 peak windows.</span>
+                        <span class="lang-fr"><strong>Investir au bon endroit :</strong> Inutile de construire un salon réservé à la première classe, trop peu fréquenté. Mieux vaut prévoir un espace VIP partagé et davantage de places aux heures de pointe pour la catégorie 3.</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- ==========================================================================
+             CASE STUDY 3: CUSTOMER BOOKING PREDICTION MODEL
+             ========================================================================== -->
+        <article class="case-study-card">
+            <div class="card-tag"><span class="lang-en">Project 03</span><span class="lang-fr">Projet 03</span></div>
+
+  <h2 class="study-title lang-en">Customer Flight Booking Prediction Model (Machine Learning)</h2>
+  <h2 class="study-title lang-fr">Prévision des réservations de vols par apprentissage automatique</h2>
+
+  <p class="study-summary lang-en">A machine learning model developed in Python to analyze digital customer browsing patterns and predict customers who will complete their flight booking.</p>
+  <p class="study-summary lang-fr">Un modèle développé en Python pour analyser la navigation des clients et prévoir s’ils iront jusqu’au bout de leur réservation.</p>
+
+  <h3 class="section-subheading lang-en">The Business Challenge</h3>
+  <h3 class="section-subheading lang-fr">Le problème à résoudre</h3>
+
+  <p class="lang-en">British Airways sought to understand which online browsing and search behaviors signal high purchase intent versus high drop-off risks. The goal was to build a machine learning model to uncover key drivers of conversion and improve marketing strategy.</p>
+  <p class="lang-fr">British Airways voulait savoir quels comportements de navigation et de recherche indiquent qu’un client est prêt à réserver, et lesquels annoncent un abandon. L’objectif était de créer un modèle d’apprentissage automatique pour repérer les principaux facteurs de réservation et améliorer la stratégie marketing.</p>
+
+  <hr>
+
+  <!-- Technical Workflow -->
+  <h3 class="section-subheading lang-en">Technical Workflow & Data Pipeline</h3>
+  <h3 class="section-subheading lang-fr">Étapes de traitement et préparation des données</h3>
+
+  <!-- Step I -->
+  <p class="lang-en"><strong>I. Data Ingestion:</strong> Loaded a 50,000-record customer flight search dataset locally using Pandas, then used the <code>.head()</code> method to visually inspect column structures, sample values, and feature formats.</p>
+  <p class="lang-fr"><strong>I. Import des données :</strong> Importation dans Pandas d’un jeu de données contenant 50 000 recherches de vols, puis utilisation de <code>.head()</code> pour examiner les colonnes et quelques exemples.</p>
+  
+   <div class="media-frame wide-media">
+    <img src="images/data-processing.png" alt="Data Ingestion - Pandas head method"
+    class="zoomable-img" 
+    onclick="openLightbox('images/data-processing.png' )">
+  </div>
+
+  <!-- Step II -->
+  <p class="lang-en"><strong>II. Schema & Quality Verification:</strong> Checked data structure and missing values using <code>.info()</code>. <em>Finding:</em> Confirmed 50,000 complete rows with zero null values across all features. Identified non-numeric columns (<code>flight_day</code>, <code>sales_channel</code>, <code>trip_type</code>, <code>route</code>, <code>booking_origin</code>) requiring categorical encoding before model training.</p>
+  <p class="lang-fr"><strong>II. Vérification des données :</strong> Contrôle de la structure et des valeurs manquantes avec <code>.info()</code>. <em>Résultat :</em> les 50 000 lignes sont complètes. Certaines colonnes contenant des catégories, comme le jour du vol ou la destination, doivent être converties en valeurs numériques avant l’entraînement du modèle.</p>
+  
+  <div class="media-frame wide-media">
+    <img src="images/data-info.png" alt="Schema Verification - Pandas info method"
+    class="zoomable-img" 
+    onclick="openLightbox('images/data-info.png' )">
+  </div>
+  </div>
+
+  <!-- Step III -->
+  <p class="lang-en"><strong>III. Day Mapping:</strong> Mapped categorical day strings (Mon–Sun) to numeric values (1–7) to preserve chronological order for model training.</p>
+  <p class="lang-fr"><strong>III. Conversion des jours :</strong> Remplacement des jours de la semaine (lun.–dim.) par des valeurs de 1 à 7 afin que le modèle conserve leur ordre chronologique.</p>
+  
+  <div class="media-frame wide-media">
+    <img src="images/data-mapping.png" alt="Day Mapping Transformation"
+    class="zoomable-img" 
+    onclick="openLightbox('images/data-mapping.png' )">
+  </div>
+  </div>
+
+  <!-- Step IV -->
+  <p class="lang-en"><strong>IV. Exploratory Data Analysis:</strong> Executed <code>df.describe()</code> to evaluate central tendencies, standard deviations, and detect potential outliers across continuous numerical features.</p>
+  <p class="lang-fr"><strong>IV. Exploration des données :</strong> Utilisation de <code>df.describe()</code> pour examiner les tendances centrales et les écarts-types, et repérer d’éventuelles valeurs aberrantes dans les variables numériques.</p>
+  
+  <div class="media-frame wide-media">
+    <img src="images/data-descrption.png" alt="Summary Statistics - Pandas describe method"
+    class="zoomable-img" 
+    onclick="openLightbox('images/data-descrption.png' )">
+  </div>
+  </div>
+
+  <!-- Step V -->
+  <p class="lang-en"><strong>V. Categorical Encoding:</strong> Applied Scikit-Learn's <code>LabelEncoder</code> to high-cardinality string columns (<code>route</code>, <code>booking_origin</code>, <code>sales_channel</code>, <code>trip_type</code>) so decision trees could evaluate them.</p>
+  <p class="lang-fr"><strong>V. Encodage des catégories :</strong> Utilisation de <code>LabelEncoder</code> de Scikit-Learn pour convertir les colonnes textuelles en valeurs que les arbres de décision peuvent traiter.</p>
+  
+  <div class="media-frame wide-media">
+    <img src="images/data-conversion.png" alt="Categorical Label Encoding Output"
+    class="zoomable-img" 
+    onclick="openLightbox('images/data-conversion.png' )">
+  </div>
+  </div>
+
+  <!-- Step VI -->
+  <p class="lang-en"><strong>VI. Model Training Pipeline:</strong> Separated features ($X$) and target ($y$), performed an 80/20 train-test split with target stratification, and trained a Random Forest Classifier with balanced class weights to handle booking imbalance.</p>
+  <p class="lang-fr"><strong>VI. Entraînement du modèle :</strong> Séparation des variables ($X$) et de la cible ($y$), puis division des données en deux ensembles (80 % pour l’entraînement et 20 % pour le test), avec répartition équilibrée des classes. Le modèle utilisé est une forêt aléatoire.</p>
+  
+  <div class="media-frame wide-media">
+    <img src="images/training-model.png" alt="Model Training and Evaluation Code"
+    class="zoomable-img" 
+    onclick="openLightbox('images/training-model.png' )">
+  </div>
+  </div>
+
+  <!-- Step VII -->
+  <p class="lang-en"><strong>VII. Model Evaluation & Feature Importance:</strong> Achieved a <strong>ROC-AUC score of 0.7827</strong>. Feature importance analysis revealed that purchase lead time, route, and origin are the dominant drivers of booking completions.</p>
+  <p class="lang-fr"><strong>VII. Évaluation du modèle et importance des variables :</strong> Le modèle obtient un <strong>score ROC-AUC de 0,7827</strong>. Le délai entre la recherche et le départ, l’itinéraire et le pays d’origine sont les principaux facteurs associés à la réservation.</p>
+  
+  <div class="media-frame wide-media">
+    <img src="images/feature_importance.png" alt="ROC-AUC Score and Feature Importance Plot"
+    class="zoomable-img" 
+    onclick="openLightbox('images/feature_importance.png' )">
+  </div>
+  </div>
+</div>
+
+  <!-- Business Recommendations Section -->
+  <div class="outcome-box">
+                <h3 class="section-subheading lang-en"><i class="fas fa-trophy"></i> Business Recommendations & Strategic Impact</h3>
+                <h3 class="section-subheading lang-fr"><i class="fas fa-trophy"></i> Recommandations et retombées stratégiques</h3>
+                <ul class="bullet-list">
+                    <li class="lang-en"><strong>Targeted Lead-Time Campaigns:</strong> Capitalize on purchase lead time (the top predictor) by setting up personalized email retargeting and promotional offers for users searching 30+ days in advance, locking in bookings before customers switch to competitors.</li>
+                <li class="lang-fr"><strong>Campagnes selon la date de réservation :</strong> Le délai avant le départ étant le principal facteur prédictif, envoyer des rappels et des offres personnalisés aux personnes qui recherchent un vol plus de 30 jours à l’avance afin de les encourager à réserver.</li>
+
+                <li class="lang-en"><strong>Route-Specific Merchandising:</strong> Optimize high-volume, high-converting routes identified by the model by presenting relevant add-ons (extra baggage, seat upgrades) earlier in the search flow to increase average revenue per user.</li>
+                <li class="lang-fr"><strong>Offres adaptées aux itinéraires :</strong> Pour les trajets les plus fréquentés et les plus susceptibles d’aboutir à une réservation, proposer plus tôt des options pertinentes, comme un bagage supplémentaire ou un surclassement.</li>
+
+                <li class="lang-en"><strong>Geographic Ad Spend Allocation:</strong> Adjust digital marketing spend based on <code>booking_origin</code> performance, redirecting budget toward geographic regions showing higher baseline conversion probabilities.</li>
+                <li class="lang-fr"><strong>Répartition géographique du budget publicitaire :</strong> S’appuyer sur les résultats par pays ou région (<code>booking_origin</code>) pour investir davantage là où les chances de réservation sont les plus élevées.</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- ==========================================================================
+             CASE STUDY 4: AI DATA LABELING & QA
+             ========================================================================== -->
+        <article class="case-study-card">
+            <div class="card-tag"><span class="lang-en">Project 04</span><span class="lang-fr">Projet 04</span></div>
+
+            <h2 class="study-title lang-en">AI Training Data Labeling & Quality Assurance (Forage Simulation)</h2>
+            <h2 class="study-title lang-fr">Annotation de données pour l’IA et contrôle qualité</h2>
+
+            <p class="study-summary lang-en">Executed structured data labeling, edge-case rationale documentation, and peer quality control auditing across customer support text datasets to train NLP classification models.</p>
+            <p class="study-summary lang-fr">Annotation de messages de service client, documentation des cas ambigus et vérification de la qualité des données destinées à l’entraînement de modèles de traitement automatique du langage.</p>
+
+            <h3 class="section-subheading lang-en">Core Taxonomy Framework</h3>
+            <h3 class="section-subheading lang-fr">Catégories d’annotation</h3>
+            <ul class="bullet-list">
+                <li>
+                    <span class="lang-en"><strong>Intent Taxonomy:</strong> Categorizes user requests into <strong>Billing</strong> (refunds, invoices), <strong>Technical</strong> (errors, bugs), <strong>Account</strong> (profile updates), or <strong>Other</strong>.</span>
+                    <span class="lang-fr"><strong>Type de demande :</strong> Classement des demandes dans l’une des catégories suivantes : <strong>Facturation</strong>, <strong>Assistance technique</strong>, <strong>Compte</strong> ou <strong>Autre</strong>.</span>
+                </li>
+                <li>
+                    <span class="lang-en"><strong>Sentiment Analysis:</strong> Evaluates tone into <strong>Positive</strong>, <strong>Neutral</strong>, or <strong>Negative</strong> to guide automated AI response escalation.</span>
+                    <span class="lang-fr"><strong>Sentiment :</strong> Classement du ton du message comme <strong>positif</strong>, <strong>neutre</strong> ou <strong>négatif</strong> pour aider l’IA à adapter sa réponse.</span>
+                </li>
+                <li>
+                    <span class="lang-en"><strong>PII Detection:</strong> Flags Personally Identifiable Information (names, emails, phone numbers) as <code>"Yes"</code> for privacy compliance.</span>
+                    <span class="lang-fr"><strong>Détection des données personnelles :</strong> Repérage des noms, adresses e-mail et numéros de téléphone pour protéger la vie privée et respecter le RGPD.</span>
+                </li>
+            </ul>
+
+            <!-- Side-by-Side Images -->
+            <div class="grid-two-col">
+                <div class="media-frame">
+                    <img src="images/labeling-batch-1.jpg" 
+                    alt="Batch Data Labeling Execution" 
+                   class="zoomable-img" 
+                    onclick="openLightbox('images/labeling-batch-1.jpg', 'Multi-class batch labeling in progress')">
+                    <p class="media-caption lang-en">Figure 4.1: Multi-class batch labeling in progress.</p>
+                    <p class="media-caption lang-fr">Figure 4.1 : Annotation de plusieurs messages par catégorie.</p>
+                </div>
+                <div class="media-frame">
+                    <img src="images/labeling-edge-case-1.jpg" 
+                   alt="Edge Case Rationale Documentation" 
+                   class="zoomable-img" 
+                   onclick="openLightbox('images/labeling-edge-case-1.jpg', 'Edge Case rationale documentation')">
+                    <p class="media-caption lang-en">Figure 4.2: Edge Case rationale documentation for ambigious logs.</p>
+                    <p class="media-caption lang-fr">Figure 4.2 : Justification des choix d’annotation pour les cas ambigus.</p>
+                </div>
+            </div>
+
+            <h3 class="section-subheading lang-en" style="margin-top: 30px;">Quality Control & Audit Guidelines</h3>
+            <h3 class="section-subheading lang-fr" style="margin-top: 30px;">Contrôle qualité et consignes de vérification</h3>
+            <p class="lang-en">During quality control audits, applied the <strong>Keep / Fix / Flag</strong> framework. Enforced corrections on samples missing PII flags when users requested updates to phone numbers or addresses—even when the digits were not explicitly written in the message body.</p>
+            <p class="lang-fr">Lors des vérifications, j’ai appliqué la méthode <strong>Keep / Fix / Flag</strong> (conserver, corriger ou signaler). Par exemple, lorsqu’un client demandait de modifier son numéro de téléphone, il fallait signaler la présence de données personnelles, même si le numéro n’apparaissait pas dans le message.</p>
+
+            <div class="media-frame wide-media">
+                <img src="images/labeling-review-qa.jpg" 
+               alt="Quality Control Review Framework" 
+               class="zoomable-img" 
+               onclick="openLightbox('images/labeling-review-qa.jpg', 'Quality control audit interface (Keep/Fix/Flag)')">
+                <p class="media-caption lang-en">Figure 4.3: Peer-label quality assurance audit interface applying Keep/Fix/Flag logic.</p>
+                <p class="media-caption lang-fr">Figure 4.3 : Vérification des annotations avec la méthode Keep/Fix/Flag.</p>
+            </div>
+
+            <div class="takeaway-box">
+                <p class="lang-en"><strong>Key Takeaway:</strong> Inconsistent annotations degrade NLP model accuracy. Documenting clear edge-case rationale notes aligns team understanding, eliminates labeling drift, and significantly improves model convergence during training.</p>
+                <p class="lang-fr"><strong>À retenir :</strong> Des annotations incohérentes nuisent à la précision des modèles de traitement du langage. Des justifications claires aident toute l’équipe à appliquer les mêmes critères et améliorent l’apprentissage du modèle.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Balikis Abdulkadri. <span class="lang-en">All rights reserved.</span><span class="lang-fr">Tous droits réservés.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Lightbox Pop-Up Modal -->
+    <div id="image-modal" class="lightbox-modal" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="modal-img" alt="Expanded view">
+        <div id="modal-caption" class="lightbox-caption"></div>
+    </div>
+
+    <script>
+        // Interactive Lightbox Modal Logic
+        function openLightbox(imgSrc, captionText) {
+            const modal = document.getElementById('image-modal');
+            const modalImg = document.getElementById('modal-img');
+            const caption = document.getElementById('modal-caption');
+            
+            modal.style.display = 'flex';
+            modalImg.src = imgSrc;
+            caption.innerText = captionText;
+        }
+
+        function closeLightbox() {
+            document.getElementById('image-modal').style.display = 'none';
+        }
+
+        // Close on ESC key press
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
