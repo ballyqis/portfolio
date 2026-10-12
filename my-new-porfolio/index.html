@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQ8445RPTF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NQ8445RPTF');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balikis Abdulkadri | Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Glass Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand" id="navBrand">Balikis Abdulkadri</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="lang-en">Home</a><a href="#home" class="lang-fr">Accueil</a></li>
+            <li><a href="#projects" class="lang-en">Projects</a><a href="#projects" class="lang-fr">Projets</a></li>
+            <li><a href="#about" class="lang-en">About</a><a href="#about" class="lang-fr">À propos</a></li>
+            <li><a href="#services" class="lang-en">Services</a><a href="#services" class="lang-fr">Services</a></li>
+        </ul>
+        <div class="lang-switch">
+            <button id="btn-en" class="active" onclick="setLanguage('en')">EN</button>
+            <span class="lang-divider">|</span>
+            <button id="btn-fr" onclick="setLanguage('fr')">FR</button>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO / HOME -->
+<header class="hero" id="home">
+    <div class="hero-layout">
+        <div class="hero-total">
+            <span class="hero-total-number">15</span>
+            <span class="lang-en">Total projects</span>
+            <span class="lang-fr">Projets au total</span>
+        </div>
+
+        <div class="hero-project-stats hero-project-stats-left" aria-label="Project categories">
+            <div class="hero-project-stat">
+                <span class="hero-project-number">4</span>
+                <span class="lang-en">Data projects</span>
+                <span class="lang-fr">Projets d’analyse de données</span>
+            </div>
+            <div class="hero-project-stat">
+                <span class="hero-project-number">7</span>
+                <span class="lang-en">Graphic design</span>
+                <span class="lang-fr">Projets de design graphique</span>
+            </div>
+        </div>
+
+        <div class="glass-card hero-glass">
+
+        <h1 class="hero-title">Balikis Abdulkadri</h1>
+        
+        <p class="hero-subtitle lang-en">Communication & Data Analysis Manager</p>
+        <p class="hero-subtitle lang-fr">Chargée de communication et d’analyse de données</p>
+        
+        <p class="hero-tagline lang-en">
+            <i>Leveraging AI-driven tools to optimize speed and precision across digital projects.</i>
+        </p>
+
+        <p class="hero-tagline lang-fr">
+            <i>J’utilise l’IA pour gagner en rapidité et en précision dans mes projets numériques.</i>
+        </p>
+
+        <div class="hero-cta-group">
+
+            <a href="#projects" class="btn btn-gold lang-en">
+                View Projects
+            </a>
+
+            <a href="#projects" class="btn btn-gold lang-fr">
+                Voir mes projets
+            </a>
+            
+            <a href="#about" class="btn btn-outline lang-en">
+                About Me
+            </a>
+
+            <a href="#about" class="btn btn-outline lang-fr">
+                À propos de moi
+            </a>
+            
+            <!-- Download CV Dropdown -->
+            <div class="cv-dropdown">
+                <button class="btn btn-gold" id="cvButton" type="button">
+                    <span class="lang-en">Download my CV</span>
+                    <span class="lang-fr">Télécharger mon CV</span>
+                    <span class="cv-arrow">⌄</span>
+                </button>
+
+                <div class="cv-menu" id="cvMenu">
+                    <a href="assets/0000_Abdulkadri_Balikis_CV.EN.pdf" download>
+                        <span class="lang-en">English CV</span>
+                        <span class="lang-fr">CV en anglais</span>
+                    </a>
+
+                    <a href="assets/0000_Abdulkadri_Balikis_CV.fr.pdf" download>
+                        <span class="lang-en">French CV</span>
+                        <span class="lang-fr">CV en français</span>
+                    </a>
+                </div>
+            </div>
+
+        </div> <!-- closes hero-cta-group -->
+
+        <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/balikis-abdulkadri/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+
+            <span class="divider">|</span>
+
+            <a href="mailto:baliqis.abdulkadri@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+                <span class="lang-en">Contact</span>
+                <span class="lang-fr">Contactez-moi</span>
+            </a>
+        </div>
+
+        </div> <!-- closes hero-glass -->
+
+        <div class="hero-project-stats hero-project-stats-right" aria-label="Project categories">
+            <div class="hero-project-stat">
+                <span class="hero-project-number">3</span>
+                <span class="lang-en">Google Analytics</span>
+                <span class="lang-fr">Projets Google Analytics</span>
+            </div>
+            <div class="hero-project-stat">
+                <span class="hero-project-number">1</span>
+                <span class="lang-en">Portfolio website</span>
+                <span class="lang-fr">Portfolio en ligne</span>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+    <!-- SECTION 2: FEATURED WORK -->
+    <section class="projects-section">
+        <div class="container">
+            
+            
+            <!-- Category Filter Pills -->
+            <div class="filter-group" id="projects">
+                <button class="filter-btn active" data-filter="all"><span class="lang-en">All</span><span class="lang-fr">Tout</span></button>
+                <button class="filter-btn" data-filter="data"><span class="lang-en">Data Analysis</span><span class="lang-fr">Analyse de données</span></button>
+                <button class="filter-btn" data-filter="design"><span class="lang-en">Visual Design</span><span class="lang-fr">Design graphique</span></button>
+                <button class="filter-btn" data-filter="video"><span class="lang-en">Video</span><span class="lang-fr">Vidéo</span></button>
+                <button class="filter-btn" data-filter="web"><span class="lang-en">Web Analytics</span><span class="lang-fr">Analyse web</span></button>
+                <button class="filter-btn" data-filter="ai"><span class="lang-en">AI Agent</span><span class="lang-fr">Intelligence artificielle</span></button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                
+                <div class="project-card" data-category="data">
+                    <div class="card-header">
+                        
+                        <div>
+                            <h3 class="lang-en">Data Projects</h3>
+                            <h3 class="lang-fr">Projets de Données</h3>
+                        </div>
+                    </div>
+                    <p class="card-desc lang-en">Interactive dashboards and data models turning complex business datasets into clear, actionable decision-making tools.</p>
+                    <p class="card-desc lang-fr">Des tableaux de bord interactifs qui rendent les données complexes plus faciles à comprendre et à exploiter.</p>
+                    <div class="tags">
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Tableau</span>
+                        <span class="tag">Annotation</span>
+                        <span class="tag">Excel</span>
+                    </div>
+                    <a href="project-data.html" class="btn-card"><span class="lang-en">&rarr; View Details</span><span class="lang-fr">&rarr; Voir les détails</span></a>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="card-header">
+                        
+                        <div>
+                            <h3 class="lang-en">Designs & Content Strategy</h3>
+                            <h3 class="lang-fr">Identité visuelle et stratégie de marque</h3>
+                        </div>
+                    </div>
+                    <p class="card-desc lang-en">Strategic content frameworks aligning brand voice, story planning, book cover art, and visual brand assets.</p>
+                    <p class="card-desc lang-fr">Création d’identités visuelles, de couvertures de livres et de supports numériques avec Canva et des outils d’IA.</p>
+                    <div class="tags">
+                        <span class="tag">Content Strategy</span>
+                        <span class="tag">Brand Identity</span>
+                        <span class="tag">Canva</span>
+                        <span class="tag">AI Creative</span>
+                    </div>
+                    <a href="project-design.html" class="btn-card"><span class="lang-en">&rarr; View Details</span><span class="lang-fr">&rarr; Voir les détails</span></a>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="card-header">
+                        
+                        <div>
+                            <h3 class="lang-en">Google Analytics & CMS Management</h3>
+                            <h3 class="lang-fr">Gestion de site et Google Analytics</h3>
+                        </div>
+                    </div>
+                    <p class="card-desc lang-en">Implementation of GA4 tracking, SEO copywriting, and Blogger CMS management to measure traffic and engagement.</p>
+                    <p class="card-desc lang-fr">Gestion de sites Blogger, référencement naturel et configuration de Google Analytics 4 pour mesurer leur audience.</p>
+                    <div class="tags">
+                        <span class="tag">Google Analytics</span>
+                        <span class="tag">GA4</span>
+                        <span class="tag">SEO</span>
+                        <span class="tag">Blogger</span>
+                    </div>
+                    <a href="project-blog.html" class="btn-card"><span class="lang-en">&rarr; View Details</span><span class="lang-fr">&rarr; Voir les détails</span></a>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="card-header">
+                        
+                        <div>
+                            <h3 class="lang-en">Portfolio Website </h3>
+                            <h3 class="lang-fr">Création d’un portfolio en ligne</h3>
+                        </div>
+                    </div>
+                    <p class="card-desc lang-en">Hand-coded portfolio site accelerated with AI tools, featuring full bilingual toggling and modular UI architecture.</p>
+                    <p class="card-desc lang-fr">Création de ce portfolio avec l’aide de l’IA, avec une navigation bilingue qui s’adapte à la langue choisie.</p>
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">UI Design</span>
+                    </div>
+                    <a href="project-portfolio.html" class="btn-card"><span class="lang-en">&rarr; View Details</span><span class="lang-fr">&rarr; Voir les détails</span></a>
+                </div>
+
+                <div class="project-card" data-category="video">
+                    <div class="card-header">
+                        
+                        <div>
+                            <h3 class="lang-en">Video Content Optimization</h3>
+                            <h3 class="lang-fr">Montage et création vidéo</h3>
+                        </div>
+                    </div>
+                    <p class="card-desc lang-en"> video editing techniques focused on pacing, sound structure, dynamic storytelling, and high engagement.</p>
+                    <p class="card-desc lang-fr">Montage vidéo soigné : rythme, travail du son et effets visuels pour capter l’attention du public.</p>
+                    <div class="tags">
+                        <span class="tag">Video Editing</span>
+                        <span class="tag">YouTube Analytics</span>
+                        <span class="tag">Content Optimization</span>
+                    </div>
+                    <button class="btn-card is-in-progress" type="button" disabled aria-busy="true">
+                        <span class="loading-spinner" aria-hidden="true"></span>
+                        <span class="lang-en">In Progress</span>
+                        <span class="lang-fr">En cours</span>
+                    </button>
+                </div>
+
+                <div class="project-card" data-category="ai">
+                    <div class="card-header">
+                        
+                        <div>
+                            <h3 class="lang-en">AI Chatbot Development</h3>
+                            <h3 class="lang-fr">Création d’un assistant conversationnel</h3>
+                        </div>
+                    </div>
+                    <p class="card-desc lang-en">Designing a conversational agent to simplify user inquiries, reduce response times, and improve digital engagement using LLMs.</p>
+                    <p class="card-desc lang-fr">Conception d’un assistant basé sur l’IA pour répondre aux questions plus rapidement et faciliter les échanges avec les utilisateurs.</p>
+                    <div class="tags">
+                        <span class="tag">AI</span>
+                        <span class="tag">Chatbot</span>
+                        <span class="tag">LLMs</span>
+                        <span class="tag">Prompt Engineering</span>
+                    </div>
+                    <button class="btn-card is-in-progress" type="button" disabled aria-busy="true">
+                        <span class="loading-spinner" aria-hidden="true"></span>
+                        <span class="lang-en">In Progress</span>
+                        <span class="lang-fr">En cours</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+   <!-- ==========================================================================
+     ABOUT ME / BACKGROUND & EXPERTISE SECTION
+     ========================================================================== -->
+<!-- =========================
+     ABOUT ME SECTION
+========================= -->
+
+<section class="about-section">
+
+  <div class="about-container">
+
+    <!-- Section Title -->
+    <div class="section-heading" id="about">
+      
+
+      <h2>
+        <span class="lang-en">About Me</span>
+        
+        <span class="lang-fr">À propos de moi</span>
+      </h2>
+    </div>
+
+
+    <!-- =========================
+         INTRODUCTION
+    ========================= -->
+
+    <div class="about-intro">
+
+      <!-- Headshot -->
+      <div class="about-photo">
+        <div class="photo-frame">
+          <img
+            src="images/profile-picture.webp"
+            alt="Balikis Abdulkadri" loading="lazy" decoding="async" width="880" height="1168">
+        </div>
+      </div>
+
+
+      <!-- About Text -->
+      <div class="about-description">
+
+        <p class="about-lead">
+
+          <span class="lang-en">
+            I’m a bilingual digital professional combining
+            communication, data, technology, and document
+            translation to deliver practical solutions.
+          </span>
+
+          <span class="lang-fr">
+            Professionnelle du numérique bilingue, je mets mes compétences
+            en communication, en analyse de données, en technologie et en
+            traduction de documents au service de solutions concrètes.
+          </span>
+
+        </p>
+
+
+        <p>
+
+          <span class="lang-en">
+            My work spans data analysis, web development,
+            digital content, and AI. I also help brands grow
+            their online visibility through web and social
+            media content, graphic design, and storytelling.
+          </span>
+
+          <span class="lang-fr">
+            Je travaille sur des projets d’analyse de données, de développement web,
+            de création de contenu numérique et d’intelligence artificielle.
+            J’accompagne aussi les marques dans leur visibilité en ligne grâce
+            aux contenus pour le web et les réseaux sociaux, au design graphique
+            et à la narration de marque.
+          </span>
+
+        </p>
+
+
+        <p>
+
+          <span class="lang-en">
+            I’m interested in using data and digital tools
+            to understand problems, uncover insights, and
+            build solutions that create value.
+          </span>
+
+          <span class="lang-fr">
+            J’aime m’appuyer sur les données et les outils numériques
+            pour mieux comprendre les enjeux, en tirer des enseignements
+            et concevoir des solutions utiles.
+          </span>
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         INFORMATION GRID
+    ========================= -->
+
+    <div class="about-grid">
+
+
+      <!-- EDUCATION -->
+      <div class="about-card">
+
+        <h3>
+          <span class="lang-en">Education</span>
+          <span class="lang-fr">Formation</span>
+        </h3>
+
+        <div class="card-item">
+
+          <span class="card-year">2022</span>
+
+          <h4>
+            <span class="lang-en">Bachelor of Arts</span>
+            <span class="lang-fr">Licence</span>
+          </h4>
+
+          <p>
+            <span class="lang-en">French Language</span>
+            <span class="lang-fr">Français</span>
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- CERTIFICATIONS -->
+      <div class="about-card">
+
+        <h3>
+          <span class="lang-en">Certifications</span>
+          <span class="lang-fr">Certifications</span>
+        </h3>
+
+        <ul class="simple-list">
+
+          <li>
+            <span class="lang-en">
+              Informatique décisionnelle et analyse de données
+            </span>
+
+            <span class="lang-fr">
+              Business Intelligence &amp; Data Analytics
+            </span>
+          </li>
+
+          <li>
+            <span class="lang-en">
+              AI &amp; Machine Learning
+            </span>
+
+            <span class="lang-fr">
+              Intelligence artificielle et apprentissage automatique
+            </span>
+          </li>
+
+          <li>
+            DELF B2
+          </li>
+
+          <li>
+            <span class="lang-en">
+              TEFL — Enseignement de l’anglais langue étrangère
+            </span>
+
+            <span class="lang-fr">
+              TEFL — Teaching English as a Foreign Language
+            </span>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- EXPERIENCE -->
+      <div class="about-card experience-card">
+
+        <h3>
+          <span class="lang-en">Experience</span>
+          <span class="lang-fr">Expérience</span>
+        </h3>
+
+
+        <div class="experience-item">
+
+          <span class="experience-date">
+            2025 – <span class="lang-en">Present</span><span class="lang-fr">aujourd’hui</span>
+          </span>
+
+          <h4>
+            <span class="lang-en">
+              English Language Assistant
+            </span>
+
+            <span class="lang-fr">
+              Assistante d’anglais
+            </span>
+          </h4>
+
+          <p>
+            Lycée Pierre de Coubertin, France
+          </p>
+
+        </div>
+
+
+        <div class="experience-item">
+
+          <span class="experience-date">
+            2024 – 2025
+          </span>
+
+          <h4>
+            <span class="lang-en">
+              French Teacher &amp; Data Analyst
+            </span>
+
+            <span class="lang-fr">
+              Professeure de français et analyste de données
+            </span>
+          </h4>
+
+          <p>
+            St. Anne's Secondary School, Nigeria
+          </p>
+
+        </div>
+
+
+        <div class="experience-item">
+
+          <span class="experience-date">
+            2023 – 2024
+          </span>
+
+          <h4>
+            <span class="lang-en">
+              Customer Service Manager
+            </span>
+
+            <span class="lang-fr">
+              Responsable du service client
+            </span>
+          </h4>
+
+          <p>
+            Nirsal Microfinance Bank, Nigeria
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- EXPERTISE -->
+      <div class="about-card">
+
+        <h3>
+          <span class="lang-en">Expertise</span>
+          <span class="lang-fr">Expertise</span>
+        </h3>
+
+
+        <div class="expertise-item">
+
+          <h4>
+            <span class="lang-en">
+              Web Development
+            </span>
+
+            <span class="lang-fr">
+              Développement web
+            </span>
+          </h4>
+
+          <p>
+            <span class="lang-en">
+              Website creation &amp; optimisation.
+            </span>
+
+            <span class="lang-fr">
+              Création et optimisation de sites web.
+            </span>
+          </p>
+
+        </div>
+
+
+        <div class="expertise-item">
+
+          <h4>
+            <span class="lang-en">AI Prompt Engineering</span>
+            <span class="lang-fr">Rédaction de prompts pour l’IA</span>
+          </h4>
+
+          <p>
+            <span class="lang-en">
+              Prompt engineering, content optimisation &amp; automation.
+            </span>
+
+            <span class="lang-fr">
+              Rédaction de prompts, optimisation de contenu et automatisation.
+            </span>
+          </p>
+
+        </div>
+
+
+        <div class="expertise-item">
+
+          <h4>
+            <span class="lang-en">
+              Graphic Design
+            </span>
+
+            <span class="lang-fr">
+              Design graphique
+            </span>
+          </h4>
+
+          <p>
+            <span class="lang-en">
+              Brand identity &amp; editorial design.
+            </span>
+
+            <span class="lang-fr">
+              Identité visuelle &amp; design éditorial.
+            </span>
+          </p>
+
+        </div>
+
+
+        <div class="expertise-item">
+
+          <h4>
+            <span class="lang-en">
+              Data Analysis
+            </span>
+
+            <span class="lang-fr">
+              Analyse de données
+            </span>
+          </h4>
+
+          <p>
+            <span class="lang-en">
+              Data analysis &amp; business insights.
+            </span>
+
+            <span class="lang-fr">
+              Analyse de données et aide à la décision.
+            </span>
+          </p>
+
+        </div>
+
+        <div class="expertise-item">
+
+          <h4>
+            <span class="lang-en">Translation</span>
+            <span class="lang-fr">Traduction</span>
+          </h4>
+
+          <p>
+            <span class="lang-en">
+              Translation of a range of documents with care for meaning, tone, and context.
+            </span>
+
+            <span class="lang-fr">
+              Traduction de différents documents, dans le respect du sens, du ton et du contexte.
+            </span>
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- TOOLS -->
+      <div class="about-card">
+
+        <h3>
+          <span class="lang-en">
+            Tools
+          </span>
+
+          <span class="lang-fr">
+            Outils
+          </span>
+        </h3>
+
+        <div class="tools-list">
+
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Blogger</span>
+          <span>Excel</span>
+          <span>Google Analytics</span>
+          <span>Tableau</span>
+          <span>Python</span>
+          <span>Canva</span>
+          <span>Machine Learning</span>
+          <span>ChatGPT</span>
+          <span>Claude</span>
+          <span>Copilot</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+    <!-- SECTION 4: SERVICES -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title" id="services">
+                <span class="lang-en">Services</span>
+                <span class="lang-fr">Mes Services</span>
+            </h2>
+            <div class="services-grid">
+                
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>
+                        <span class="lang-en">1. Websites Optimization</span>
+                        <span class="lang-fr">1. Création et optimisation de sites web</span>
+                    </h3>
+                    <p class="lang-en">Website designs and seamless integration of digital content on web platforms.</p>
+                    <p class="lang-fr">Création de sites web et intégration de contenus numériques adaptés à vos besoins.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h3>
+                        <span class="lang-en">2. Data Analysis & Labeling</span>
+                        <span class="lang-fr">2. Analyse et annotation de données</span>
+                    </h3>
+                    <p class="lang-en">Transforming raw datasets into structured models, visualization dashboards, and AI training labels.</p>
+                    <p class="lang-fr">Transformation de données brutes en jeux de données structurés, tableaux de bord et données d’entraînement pour l’IA.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>
+                        <span class="lang-en">3. Graphic Designs</span>
+                        <span class="lang-fr">3. Design graphique</span>
+                    </h3>
+                    <p class="lang-en">Eye-catching visual materials including marketing flyers, editorial layouts, book covers, and infographics.</p>
+                    <p class="lang-fr">Création de supports visuels : affiches, infographies, couvertures et éléments d’identité de marque.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>
+                        <span class="lang-en">4. Web Analytics</span>
+                        <span class="lang-fr">4. Analyse d’audience avec Google Analytics</span>
+                    </h3>
+                    <p class="lang-en">Tracking user behavior, setting up conversion metrics, and optimizing traffic channels via GA4.</p>
+                    <p class="lang-fr">Analyse du comportement des visiteurs, suivi des conversions et optimisation du trafic avec GA4.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-photo-video"></i></div>
+                    <h3>
+                        <span class="lang-en">5. Video Editing</span>
+                        <span class="lang-fr">5. Montage Vidéo</span>
+                    </h3>
+                    <p class="lang-en">Crafting high-engagement video content with precise pacing, sound design, and visual enhancements.</p>
+                    <p class="lang-fr">Montage vidéo soigné, avec un travail précis sur le rythme, le son et l’impact des images.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>
+                        <span class="lang-en">6. Business Analytics / Digital Marketing</span>
+                        <span class="lang-fr">6. Analyse commerciale et marketing numérique</span>
+                    </h3>
+                    <p class="lang-en">Combining strategic growth insights with targeted digital marketing and brand positioning.</p>
+                    <p class="lang-fr">Analyse des performances pour orienter la croissance et renforcer le positionnement de marque.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-language"></i></div>
+                    <h3>
+                        <span class="lang-en">7. Document Translation</span>
+                        <span class="lang-fr">7. Traduction de documents</span>
+                    </h3>
+                    <p class="lang-en">Translation of different documents with care for meaning, tone, and context.</p>
+                    <p class="lang-fr">Traduction de différents documents, dans le respect du sens, du ton et du contexte.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Balikis Abdulkadri. <span class="lang-en">All rights reserved.</span><span class="lang-fr">Tous droits réservés.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
